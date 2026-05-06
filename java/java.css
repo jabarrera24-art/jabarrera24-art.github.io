@@ -1,0 +1,291 @@
+/* Box sizing for all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Styles for the Body */
+body {
+    background-color: #D2B48C; /* Background color */
+    color: #231814; /* Text color */
+    font-family: Tahoma, Arial, sans-serif; /* Font family */
+    margin: 0; /* Reset default margin */
+}
+
+/* Styles for the Wrapper */
+#wrapper {
+    background-color: #231814; /* Background color */
+    padding: 0; /* Remove padding */
+}
+
+/* Styles for the Header */
+header {
+    background-color: #D2B48C; /* Background color */
+    background-image: url(../image/cup.jpg); /* Background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    color: #231814; /* Text color */
+    height: 128px; /* Set height */
+    padding-left: 105px; /* Add left padding */
+    padding-top: 5px; /* Add top padding */
+    padding-bottom: 5px; /* Add bottom padding */
+}
+
+header a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+header a:link {
+    color: #231814; /* Link color */
+}
+
+header a:visited {
+    color: #231814; /* Visited link color */
+}
+
+header a:hover {
+    color: #FEF6C2; /* Hover link color */
+}
+
+/* Styles for Headings */
+h1 {
+    font-size: 2em; /* Font size for h1 */
+}
+
+h2 {
+    color: #8C3826; /* Text color for h2 */
+}
+
+h3, dt {
+    color: #8C3826; /* Text color for h3 and dt */
+}
+h4 {
+    background-color: #D2B48C; /* Background color for h4 */
+    font-size: 1.2em; /* Font size for h4 */
+    padding-left: .5em; /* Add left padding */
+    padding-bottom: 0; /* Remove bottom padding */
+    text-transform: uppercase; /* Convert text to uppercase */
+    border-bottom: 1px solid #221811; /* Add bottom border */
+    clear: left; /* Clear float */
+}
+
+/* Styles for Navigation */
+nav {
+    text-align: center; /* Align text to the center */
+    font-size: 1.5em; /* Font size */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav a:link {
+    color: #FEF6C2; /* Link color */
+}
+
+nav a:visited {
+    color: #D2B48C; /* Visited link color */
+}
+
+nav a:hover {
+    color: #CC9933; /* Hover link color */
+}
+
+nav ul {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Arrange items in a column */
+    font-size: 1.25em; /* Font size */
+    list-style: none; /* Remove list bullet */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav li {
+    border-bottom: 1px solid #FEF6C2; /* Add bottom border */
+    padding: .5em 1em; /* Add padding */
+    width: 10em; /* Set width */
+}
+
+/* Styles for Main Content */
+main {
+    background-color: #FEF6C2; /* Background color */
+    display: block; /* Display as block element */
+    padding: 0 2em 0; /* Add padding */
+}
+
+h2, h3, h4, p, div, ul, dl {
+    padding-left: 1em; /* Add left padding */
+    padding-right: 1em; /* Add right padding */
+}
+
+main ul {
+    padding-left: 2em; /* Add left padding */
+}
+/* Styles for Details */
+.details {
+    padding-left: 20%; /* Add left padding */
+    padding-right: 20%; /* Add right padding */
+    overflow: auto; /* Add overflow */
+}
+/* Styles for Images */
+img {
+    padding-left: 10px; /* Add left padding */
+    padding-right: 10px; /* Add right padding */
+}
+
+/* Styles for Home Hero */
+#homehero {
+    height: 300px;
+    background-image: url(../image/road.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#heromugs {
+    height: 300px;
+    background-image: url(../image/threemugs.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#heroguitar {
+    height: 300px;
+    background-image: url(../image/guitar.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Styles for Mobile */
+#mobile {
+    display: inline; /* Display as inline element */
+}
+
+/* Styles for Desktop */
+#desktop {
+    display: none; /* Hide element */
+}
+
+/* Styles for Footer */
+footer {
+    background-color: #D2B48C;
+    font-size: .60em;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 1em;
+    border-top: 2px solid #8C3826;
+}
+/*Styles for the table on the menu page*/
+table {
+	margin: auto;
+	width: 90%;
+	border-spacing: 0;
+}
+th, td { padding: 10px; }
+tr:nth-of-type(odd) {background-color: #D2B48E; }
+/*Styles for the form*/
+form {
+	display: flex;
+	flex-direction: column;
+	padding-left: 1em;
+	width: 80%
+}
+input, textarea { margin-bottom: .5em; }
+/*Audio Styles*/
+audio {display: block;
+	   margin-top: 1em;
+}
+
+/* Media Query for Desktop */
+@media (min-width: 600px) {
+    header {
+        padding-left: 0; /* Remove left padding */
+        text-align: center; /* Align text to the center */
+    }
+}
+h1 {
+    font-size: 3em; /* Font size for h1 */
+}
+
+nav ul {
+    flex-flow: row nowrap; /* Arrange items in a single row */
+    justify-content: space-around; /* Distribute items evenly */
+}
+
+nav li {
+    border-bottom: none; /* Remove bottom border */
+}
+
+#homehero {
+    background-image: url(../images/hero.jpg); /* Change background image */
+    height: 50vh; /* Set height to 50% of viewport height */
+}
+
+#heromugs {
+    background-image: url(../images/heromugs.jpg); /* Change background image */
+}
+
+#heroguitar {
+    background-image: url(../images/heroguitar.jpg); /* Change background image */
+}
+
+#flow {
+    display: flex; /* Use flexbox */
+    flex-direction: row; /* Arrange items in a row */
+}
+
+#mobile {
+    display: none; /* Hide element */
+}
+
+#desktop {
+    display: inline; /* Display as inline element */
+}
+
+.details {
+    display: flex; /* Use flexbox */
+    flex-direction: row; /* Arrange items in a row */
+}
+
+h4 {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+form {
+	width: 40%;
+	display: grid;
+	grid-gap: 1em;
+	gap: 1em;
+	grid-template-columns: 6em 1fr;
+}
+input[type="submit"] {
+	grid-column: 2 / 3;
+	width: 9em; }
+/* Media Query for Large Screens */
+@media (min-width: 1024px) {
+    @supports (display: grid) {
+        header {
+            grid-area: header; /* Set grid area */
+        }
+        nav {
+            grid-area: nav; /* Set grid area */
+        }
+        main {
+            grid-area: main; /* Set grid area */
+        }
+        footer {
+            grid-area: footer; /* Set grid area */
+        }
+        #wrapper {
+            display: grid; /* Use grid layout */
+            grid-template:
+                "header header"
+                "nav main"
+                "footer footer"
+                / 200px; /* Set grid template */
+        }
+        nav ul {
+            flex-direction: column; /* Arrange items in a column */
+        }
+        header {
+            background-image: url(../images/coffeelogo.jpg); /* Change background image */
+        }
+    }
+}
